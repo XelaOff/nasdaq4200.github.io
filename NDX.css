@@ -7,6 +7,15 @@
   font-weight: 400;
   src: url('fonts/figtree-v6-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* paytone-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/paytone-one-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /*end fonts*/
 
 
@@ -17,8 +26,8 @@ body
   font-family: Figtree;
   font-size: 16px;
   color: white;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,83,161,1) 35%, rgba(0,212,255,1) 100%);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,83,161,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 /*larger screens*/
@@ -128,11 +137,42 @@ img
 
 
 /*various*/
+.nasdaq4200
+{
+  display: block;
+  font-family: Paytone One;
+  font-size:calc(16px + 2vw);
+}
+
 .headline
 {
   display: block;
-  font-size: 2em;
-  font-weight: bold;
+  font-family: Paytone One;
+  font-size:calc(16px + 1.8vw);
   margin-bottom: 1em;
+}
+
+.tilt-left
+{
+  transform: perspective(1500px) rotateY(-10deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
+}
+
+.tilt-right
+{
+  transform: perspective(1500px) rotateY(10deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
 }
 /*end various*/
