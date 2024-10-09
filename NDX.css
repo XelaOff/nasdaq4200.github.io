@@ -1,0 +1,138 @@
+/*fonts*/
+/* figtree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/figtree-v6-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*end fonts*/
+
+
+
+/*global settings*/
+body
+{
+  font-family: Figtree;
+  font-size: 16px;
+  color: white;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,83,161,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/*larger screens*/
+@media (min-width: 992px) {
+  body {
+    font-size: 24px;
+  }
+} 
+
+/*smaller devices*/
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img
+{
+  height: auto; 
+  max-width: 100%;
+}
+/*end global settings*/
+
+
+
+/*main*/
+#NASDAQ4200
+{
+  display: grid;
+}
+
+#NASDAQ4200 div
+{
+  justify-self: center;
+}
+/*end main*/
+
+
+
+/*ticker*/
+.marquee-wrapper
+{
+  overflow: hidden;
+  margin: auto;
+  padding: 1em 0;
+  background-color: black;
+  color: white;
+}
+
+#marquee span 
+{
+  padding: 0 .5em;
+}
+/*end ticker*/
+
+
+
+/*standard gridsection*/
+.gridsection
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.gridsection div
+{
+  padding: 3em;
+}
+/*end standard gridsection*/
+
+
+
+/*socials*/
+#socials
+{
+  display: flex;
+}
+
+#socials span
+{
+  padding: 0 0.2em;
+}
+
+#socials img:hover {-webkit-filter: brightness(150%); }
+/*end socials*/
+
+
+
+/*footer*/
+#footer
+{
+  text-align: center;
+  font-size: 0.75em;
+  padding: 2em 0;
+}
+/*end footer*/
+
+
+
+/*various*/
+.headline
+{
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+/*end various*/
